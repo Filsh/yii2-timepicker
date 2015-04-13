@@ -17,6 +17,10 @@ class ActiveField extends \yii\widgets\ActiveField
     
     protected function registerScript($options = [])
     {
+        if($options === false) {
+            return;
+        }
+        
         $configure = !empty($options) ? Json::encode($options) : '';
         if (!isset($options['id'])) {
             $options['id'] = Html::getInputId($this->model, $this->attribute);
