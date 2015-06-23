@@ -7,26 +7,26 @@ class TimePickerAsset extends \yii\web\AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@bower/jt.timepicker';
-
-    /**
-     * @inheritdoc
-     */
-    public $depends = [
-        'yii\web\JqueryAsset'
-    ];
+    public $sourcePath = '@bower';
     
     /**
      * @inheritdoc
      */
     public $js = [
-        'jquery.timepicker.js'
+        'jt.timepicker/jquery.timepicker.js'
     ];
     
     /**
      * @inheritdoc
      */
     public $css = [
-        'jquery.timepicker.css'
+        'jt.timepicker/jquery.timepicker.css'
+    ];
+    
+    /**
+     * @inheritdoc
+     */
+    public $depends = [
+        'yii\web\JqueryAsset'
     ];
 }
